@@ -8,7 +8,7 @@ Cij = load(setfiles('weight'));
 Param.Cij = Cij.Cij;
 % Param.Dij = Dij.Dij;
 
-for n = 1 : 30
+for n = 1 : 50
     savefilename = sprintf('Results\\%s\\sim_trial%02d.mat',expName, n);
     tic
     if exist(savefilename, 'file') == 0
@@ -24,4 +24,5 @@ for n = 1 : 30
     fprintf('%s[%s] elapsed time %.2f sec. \n',FUNCTION, expName, time);
 end
 end
+
 
