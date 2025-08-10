@@ -12,7 +12,7 @@
 %Case 9 Changes in correlation and similarity under different thresholds
 %Case 10 Entropy values of each brain region at simulation points
 clc;clear;close all;
-metric = 14;
+metric = 1;
 fs = 1000;
 nTrial = 50;
 expnum = dir(['Expfile\' '*.txt']);
@@ -325,4 +325,5 @@ switch metric
 
         save('Data\pe_values.mat','pe_values','D')
 end
+
 
